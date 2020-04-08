@@ -148,7 +148,7 @@ img {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner:active {
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -256,6 +256,11 @@ p {
     height: auto;
   }
 
+  .about-headings {
+    margin: 20px 50px 0px;
+    font-size: 2em;
+  }
+
   .about-me {
     margin: 0px 100px 50px;
   }
@@ -324,6 +329,10 @@ p {
   .about-me {
     margin: 0px 50px 50px;
     font-size: 1em;
+  }
+
+  .about-headings {
+    font-size: 1.5em;
   }
 
 }
