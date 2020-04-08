@@ -35,24 +35,23 @@ canvas {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 5em;
   text-align: center;
-  /* font-family: 'Lobster', cursive; */
   font-family: 'Baloo Thambi 2', cursive;
   margin: 0px;
-  padding: 10px;
-  padding-bottom: 0px;
+  padding: 40px 10px 10px;
   color: white;
   text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Baloo Thambi 2', cursive;
   margin: 0px;
   padding: 10px;
   padding-top: 0px;
   color: white;
-  font-family: 'Baloo Thambi 2', cursive;
   text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 
@@ -72,7 +71,7 @@ nav {
 a {
   text-decoration: none;
   color: white;
-  font-size: 3vw;
+  font-size: 3em;
   font-family: 'Open Sans Condensed', sans-serif;
   padding: 10px 50px;
 }
@@ -94,8 +93,10 @@ a {
   margin: 60px;
   background-color: white;
   color: black;
-  font-family: 'Cambay', sans-serif;
+  /* font-family: 'Cambay', sans-serif; */
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5vw;
+  border-radius: 5px;
 }
 
 .button:hover {
@@ -114,18 +115,18 @@ a {
 }
 
 .item {
-  flex: 50%;
+  flex: 48%;
   font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0px;
+  margin: 10px 10px;
 }
 
 .image-link {
   padding: 0;
   max-width: 504px;
-  max-height: 304px;
+  height: 275px;
 }
 
 img {
@@ -210,13 +211,13 @@ p {
 }
 /* ! About Page */
 .about-headings {
-  margin: 20px 150px;
+  margin: 20px 150px 0px;
 }
 
 .about-me {
   color: white;
   padding: 0;
-  margin: 20px 150px;
+  margin: 0px 150px 50px;
 }
 
 
@@ -226,14 +227,21 @@ p {
 .contact-icons {
   display: flex;
   justify-content: center;
-  width: auto;
-  height: auto;
+  align-items: center;
+  max-width: auto;
+  height: 300px;
   color: white;
-  font-size: 10vw;
+  
 }
 
-.devicon-twitter-plain, .devicon-github-plain-wordmark {
-  margin: 100px 50px;
+.devicon {
+  max-width: 100px;
+  height: auto;
+  border: none;
+}
+
+.devicon-github-plain-wordmark, .devicon-twitter-plain {
+  font-size: 3em;
 }
 
 /* ! Carousel */
@@ -254,13 +262,23 @@ p {
     font-size: 3vw;
   }
 
-  /* h1 {
-    font-size: 3vw;
-  } */
+  a {
+    font-size: 2em;
+  }
+
+  .devicon {
+    width: 70px;
+    height: auto;
+  }
 
 }
 
 @media only screen and (max-width: 550px) {
+
+  a {
+    font-size: 1.5em;
+    padding: 10px 25px;
+  }
 
   .image-link {
     width: 454px;
@@ -277,8 +295,17 @@ p {
     height: 225px;
   }
 
+  .contact-icons {
+    height: 200px;
+  }
+
   .icons {
     font-size: 1em;
+  }
+
+  .devicon {
+    width: 50px;
+    height: auto;
   }
 
   p {
@@ -286,7 +313,11 @@ p {
   }
 
   h1 {
-    font-size: 3vw;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
   }
 
 }
@@ -322,5 +353,31 @@ p {
   .flip-card {
     width: 270px;
     height: 150px;
+  }
+
+  .contact-icons {
+    height: 100px;
+  }
+
+  .devicon-github-plain-wordmark, .devicon-twitter-plain {
+    font-size: 1.5em;
+  }
+
+  .devicon {
+    width: 40px;
+    height: auto;
+  }
+
+  .contact-link {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
   }
 }
