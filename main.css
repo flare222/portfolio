@@ -15,6 +15,59 @@ canvas {
   z-index: -1;
 }
 
+/* ! Animation */
+.line {
+  width: 25%;
+  height: 2px;
+  background: rgb(35,156,120);
+  background: linear-gradient(51deg, rgba(35,156,120,1) 0%, rgba(254,17,95,1) 100%);
+  position: absolute;
+}
+
+.line1 {
+  right: 1000px;
+  animation: slash 1s linear infinite;
+}
+.line2 {
+  right: 900px;
+  animation: slash 1.3s linear infinite;
+}
+.line3 {
+  right: 700px;
+  animation: slash 1.5s linear infinite;
+}
+.line4 {
+  right: 500px;
+  animation: slash 1s linear infinite;
+}
+.line5 {
+  right: 400px;
+  animation: slash 1.8s linear infinite;
+}
+.line6 {
+  right: 300px;
+  animation: slash 1.2s linear infinite;
+}
+.line7 {
+  right: 200px;
+  animation: slash 1.6s linear infinite;
+}
+.line8 {
+  right: 100px;
+  animation: slash 1.1s linear infinite;
+}
+
+@keyframes slash {
+
+  from {
+    transform: translateY(-100px) rotate(90deg);
+  }
+  to {
+    transform: translateY(1500px) rotate(90deg);
+  }
+
+}
+
 .wrap {
   display: flex;
   height: 100%;
@@ -41,7 +94,7 @@ h1 {
   margin: 0px;
   padding: 40px 10px 10px;
   color: white;
-  text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+  /* text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black; */
   font-display: optional;
 }
 
@@ -53,12 +106,16 @@ h2 {
   padding: 10px;
   padding-top: 0px;
   color: white;
-  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  /* text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black; */
 }
 
 span {
   color: rgb(224, 17, 95);
   font-family: 'Pacifico', cursive;
+}
+
+.front {
+  background-color: black;
 }
 
 nav {
@@ -94,8 +151,9 @@ a {
   background-color: white;
   color: black;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1em;
-  border-radius: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  /* border-radius: 5px; */
 }
 
 .button:hover {
@@ -116,12 +174,18 @@ a {
   flex: 48%;
   font-size: 22px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 10px;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 20px 0px;
 }
 
+.site {
+  justify-content: flex-end;
+}
+
+
 .image-link {
+  margin-right: 20px;
   padding: 0;
   max-width: 504px;
   height: 275px;
@@ -130,7 +194,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 2.5%;
+  /* border-radius: 2.5%; */
   border: rgb(224, 17, 95) 2px solid;
 }
 
@@ -138,6 +202,7 @@ img {
   background-color: transparent;
   width: 504px;
   height: 275px;
+  margin-left: 20px;
 }
 
 .flip-card-inner {
@@ -159,7 +224,7 @@ img {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   color: white;
-  border-radius: 2.5%;
+  /* border-radius: 2.5%; */
   
 }
 
@@ -211,6 +276,13 @@ p {
   margin: 0px 150px 50px;
 }
 
+.about-link {
+  padding: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
 /* ! Contact Page */
 
 .contact-icons {
@@ -233,6 +305,12 @@ p {
   font-size: 3em;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
 /* ! Carousel */
 /* .carousel-container {
   width: 80%;
@@ -251,6 +329,11 @@ p {
     font-size: 2em;
   }
 
+  .button {
+    margin: 40px;
+    font-size: 1em;
+  }
+
   .devicon {
     width: 70px;
     height: auto;
@@ -263,6 +346,37 @@ p {
 
   .about-me {
     margin: 0px 100px 50px;
+  }
+  .line1 {
+    right: 150px;
+  }
+  .line2 {
+    right: 350px;
+  }
+  .line3 {
+    right: 600px;
+  }
+  .line4 {
+    right: 500px;
+  }
+  .line5 {
+    right: 400px;
+  }
+  .line6 {
+    right: 300px;
+  }
+  .line7 {
+    right: 200px;
+  }
+  .line8 {
+    right: 100px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
   }
 
 }
@@ -312,18 +426,19 @@ p {
   }
   
   p {
-    /* padding: 20px; */
+    font-size: 1em;
+  }
+
+  .about-link {
     font-size: 1em;
   }
 
   h1 {
     font-size: 3em;
-    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
   }
 
   h2 {
     font-size: 2em;
-    text-shadow: -2.5px 0 black, 0 2.5px black, 2.5px 0 black, 0 -2.5px black;
   }
 
   .about-me {
@@ -333,6 +448,30 @@ p {
 
   .about-headings {
     font-size: 1.5em;
+  }
+  .line1 {
+    right: 150px;
+  }
+  .line2 {
+    right: 350px;
+  }
+  .line3 {
+    right: 50px;
+  }
+  .line4 {
+    right: 250px;
+  }
+  .line5 {
+    right: 400px;
+  }
+  .line6 {
+    right: 300px;
+  }
+  .line7 {
+    right: 200px;
+  }
+  .line8 {
+    right: 100px;
   }
 
 }
@@ -380,6 +519,10 @@ p {
   
   p {
     padding: 20px;
+    font-size: 0.8em;
+  }
+
+  .about-link {
     font-size: 0.8em;
   }
 
