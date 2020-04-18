@@ -26,31 +26,31 @@ canvas {
 
 .line1 {
   right: 1000px;
-  animation: slash 1s linear infinite;
+  animation: slash 1.2s linear infinite;
 }
 .line2 {
   right: 900px;
-  animation: slash 1.3s linear infinite;
+  animation: slash 1.5s linear infinite;
 }
 .line3 {
   right: 700px;
-  animation: slash 1.5s linear infinite;
+  animation: slash 1.7s linear infinite;
 }
 .line4 {
   right: 500px;
-  animation: slash 1s linear infinite;
+  animation: slash 1.3s linear infinite;
 }
 .line5 {
   right: 400px;
-  animation: slash 1.8s linear infinite;
+  animation: slash 2s linear infinite;
 }
 .line6 {
   right: 300px;
-  animation: slash 1.2s linear infinite;
+  animation: slash 1.6s linear infinite;
 }
 .line7 {
   right: 200px;
-  animation: slash 1.6s linear infinite;
+  animation: slash 1.4s linear infinite;
 }
 .line8 {
   right: 100px;
@@ -92,7 +92,7 @@ h1 {
   text-align: center;
   font-family: 'Baloo Thambi 2', cursive;
   margin: 0px;
-  padding: 40px 10px 10px;
+  /* padding: 40px 10px 10px; */
   color: white;
   /* text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black; */
   font-display: optional;
@@ -147,25 +147,24 @@ a {
 
 .button {
   padding: 20px;
-  margin: 60px;
+  margin: 40px;
   background-color: white;
   color: black;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  /* border-radius: 5px; */
 }
 
 .button:hover {
   box-shadow:
-  0 0 30px 10px rgb(35, 156, 120),
-  0 0 40px 35px rgb(87, 173, 159);
+  0 0 30px 10px rgb(35, 156, 120);
 }
 
 
 /* ! Project Page */
 .container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: black;
 }
@@ -174,18 +173,19 @@ a {
   flex: 48%;
   font-size: 22px;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  margin: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
 }
 
 .site {
   justify-content: flex-end;
+  justify-content: center;
 }
 
 
 .image-link {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   padding: 0;
   max-width: 504px;
   height: 275px;
@@ -193,8 +193,7 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
-  /* border-radius: 2.5%; */
+  height: 100%;
   border: rgb(224, 17, 95) 2px solid;
 }
 
@@ -202,7 +201,7 @@ img {
   background-color: transparent;
   width: 504px;
   height: 275px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .flip-card-inner {
@@ -296,7 +295,7 @@ p {
 }
 
 .devicon {
-  max-width: 100px;
+  max-width: 130px;
   height: auto;
   border: none;
 }
