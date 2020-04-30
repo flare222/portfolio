@@ -1,172 +1,24 @@
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
+/* ! Project 2 page */
+* {
   margin: 0;
-  background-color: rgb(0, 0, 0);
 }
-
-canvas {
-  z-index: -1;
-}
-
-/* ! Animation */
-.line {
-  width: 25%;
-  height: 2px;
-  background: rgb(35,156,120);
-  background: linear-gradient(51deg, rgba(35,156,120,1) 0%, rgba(254,17,95,1) 100%);
-  position: absolute;
-}
-
-.line1 {
-  right: 1000px;
-  animation: slash 1.2s linear infinite;
-}
-.line2 {
-  right: 900px;
-  animation: slash 1.5s linear infinite;
-}
-.line3 {
-  right: 700px;
-  animation: slash 1.7s linear infinite;
-}
-.line4 {
-  right: 500px;
-  animation: slash 1.3s linear infinite;
-}
-.line5 {
-  right: 400px;
-  animation: slash 2s linear infinite;
-}
-.line6 {
-  right: 300px;
-  animation: slash 1.6s linear infinite;
-}
-.line7 {
-  right: 200px;
-  animation: slash 1.4s linear infinite;
-}
-.line8 {
-  right: 100px;
-  animation: slash 1.1s linear infinite;
-}
-
-@keyframes slash {
-
-  from {
-    transform: translateY(-100px) rotate(90deg);
-  }
-  to {
-    transform: translateY(1500px) rotate(90deg);
-  }
-
-}
-
-.wrap {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  overflow:hidden;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.front-h1 {
-  font-size: 5em;
-  text-align: center;
-  font-family: 'Baloo Thambi 2', cursive;
-  margin: 0px;
-  color: white;
-  font-display: optional;
-}
-
-.front-h2 {
-  font-size: 3em;
-  text-align: center;
-  font-family: 'Baloo Thambi 2', cursive;
-  margin: 0px;
-  padding: 10px;
-  padding-top: 0px;
-  color: white;
-}
-
-span {
-  color: rgb(224, 17, 95);
-  font-family: 'Pacifico', cursive;
-}
-
-.front {
-  background-color: black;
-}
-
-nav {
-  background-color: black;
-  min-height: 60px;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* a {
-  text-decoration: none;
-  color: white;
-  font-size: 3em;
-  font-family: 'Open Sans Condensed', sans-serif;
-  padding: 10px 50px;
-} */
-
-.adrian-link {
-  padding: 0px;
-  font-size: 2vw;
-}
-
-.underline {
-  width: 100%;
-  height: 2px;
-  background: rgb(35,156,120);
-  background: linear-gradient(51deg, rgba(35,156,120,1) 0%, rgba(254,17,95,1) 100%);
-}
-
-.button {
-  padding: 20px;
-  margin: 40px;
-  background-color: white;
-  color: black;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.button:hover {
-  box-shadow:
-  0 0 30px 10px rgb(35, 156, 120);
-}
-
-
-/* !----------------------------
-! Project 2 page 
-!-------------------------------*/
 
 section {
   width: 100vw;
   height: 100vh;
+  /* overflow: hidden; */
   background-color: black;
 }
+
+/* .section1 {
+  background-color: coral;
+
+}
+
+.section2 {
+  background-color: darkcyan;
+
+} */
 
 .title {
   background-color: black;
@@ -183,7 +35,7 @@ section {
   /* position: fixed; */
 }
 
-.date-layer1 {
+h2 {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 35px 15px;
@@ -297,124 +149,9 @@ img {
   /* background: linear-gradient(to top right, #86F7CC, #67D7F5); */
 }
 
-/* ! Contact */
-
-
-/* @media only screen and (max-width: 850px) {
-  a {
-    font-size: 2em;
-  }
-
-  .button {
-    margin: 40px;
-    font-size: 1em;
-  }
-
-  .line1 {
-    right: 150px;
-  }
-  .line2 {
-    right: 350px;
-  }
-  .line3 {
-    right: 600px;
-  }
-  .line4 {
-    right: 500px;
-  }
-  .line5 {
-    right: 400px;
-  }
-  .line6 {
-    right: 300px;
-  }
-  .line7 {
-    right: 200px;
-  }
-  .line8 {
-    right: 100px;
-  }
-  .front-h1 {
-    font-size: 3em;
-  }
-
-  .front-h2 {
-    font-size: 2em;
-  }
-
-} */
-
-/* @media only screen and (max-width: 550px) {
-
-
-  .button {
-    font-size: 0.7em;
-    margin: 30px;
-  }
-
-  .front-h1 {
-    font-size: 3em;
-  }
-
-  .front-h2 {
-    font-size: 2em;
-  }
-
-  .line1 {
-    right: 150px;
-  }
-  .line2 {
-    right: 350px;
-  }
-  .line3 {
-    right: 50px;
-  }
-  .line4 {
-    right: 250px;
-  }
-  .line5 {
-    right: 400px;
-  }
-  .line6 {
-    right: 300px;
-  }
-  .line7 {
-    right: 200px;
-  }
-  .line8 {
-    right: 100px;
-  }
-
-} */
-
-/* 
-@media only screen and (max-width: 380px) {
-  
-
-  h1 {
-    font-size: 2.5em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-} */
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 450px) {
   section {
     height: 110vh;
-  }
-
-  .front-h1 {
-    font-size: 7vw;
   }
 
   .skew {
@@ -424,8 +161,6 @@ img {
   .more-info {
     top: 75%;
   }
-
-  
 }
 
 @media only screen and (min-width: 550px) {
@@ -437,10 +172,6 @@ img {
     transform: skewY(15deg);
   }
 
-  h3 {
-    top: 20%;
-  }
-
   .img-div {
     transform: skewY(-15deg);
   }
@@ -450,15 +181,6 @@ img {
     top: 81%;
     width: 40%;
   }
-
-  .front-h1 {
-    font-size: 3em;
-  }
-
-  .front-h2 {
-    font-size: 2em;
-  }
-
 }
 
 /* ! Screen size upwards of 650 */
@@ -469,7 +191,7 @@ img {
   }
 
   h3 {
-    top: 10%;
+    top: 14%;
   }
 
   img {
@@ -487,10 +209,6 @@ img {
     transform: skewY(11deg);
   }
 
-  h3 {
-    top: 9%;
-  }
-
   .img-div {
     transform: skewY(-11deg);
   }
@@ -498,14 +216,6 @@ img {
   .more-info {
     top: 83%;
     /* width: 40%; */
-  }
-
-  .front-h1 {
-    font-size: 3em;
-  }
-
-  .front-h2 {
-    font-size: 2em;
   }
 
 }
@@ -554,18 +264,13 @@ img {
 
   img {
     top: 8%;
-    left: 20%;
-    max-width: 75%;
+    left: 25%;
+    max-width: 70%;
   }
 
   h3 {
     top: 40%;
     left: 10%;
-  }
-
-  .more-info {
-    top: 72%;
-    width: 40%;
   }
 
   .info-para {
@@ -601,7 +306,7 @@ img {
   img {
     top: 5%;
     left: 20%;
-    /* max-width: 75%; */
+    max-width: 75%;
   }
 
   h3 {
@@ -610,7 +315,7 @@ img {
 
   .more-info {
     top: 75%;
-    /* width: 40%; */
+    width: 40%;
   }
 
   .info-para {
@@ -630,7 +335,7 @@ img {
 
   .skew {
     transform: skewY(10deg);
-    height: 75%;
+    height: 80%;
   }
 
   .img-div {
@@ -640,13 +345,12 @@ img {
   img {
     top: 0%;
     left: 22%;
-    max-width: 65%;
+    max-width: 70%;
   }
 
   h3 {
-    top: 45%;
+    top: 50%;
     left: 8%;
-    font-size: 3vw;
   }
 
   .tech {
@@ -654,10 +358,8 @@ img {
   }
 
   .more-info {
-    top: 76%;
+    top: 80%;
     width: 40%;
-    right: 3%;
   }
 
 }
-
