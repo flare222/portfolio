@@ -301,6 +301,31 @@ img {
 ! Media Queries
 !------------------------------ */
 
+@media only screen and (max-height: 500px) {
+  .intro {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+  }
+
+  .intro-p {
+    width: 50vw;
+  }
+
+  .img-profile {
+    max-width: 25vw;
+  }
+
+  a {
+    font-size: 20px;
+  }
+  
+  .at {
+    font-size: 30px;
+  }
+
+  }
+
 /* ! Screen size upwards of ... */
 @media only screen and (min-width: 800px) {
   .img-div {
