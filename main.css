@@ -1,10 +1,11 @@
-html {
+/* html {
   box-sizing: border-box;
-}
+  margin: 0;
+} */
 
-*, *:before, *:after {
+/* *, *:before, *:after {
   box-sizing: inherit;
-}
+} */
 
 body {
   margin: 0;
@@ -116,7 +117,7 @@ a {
 }
 
 .button {
-  padding: 2%;
+  padding: 1%;
   margin: 4%;
   background-color: white;
   color: black;
@@ -132,11 +133,70 @@ a {
 }
 
 /* !----------------------------
-! Project 2 page 
+! Projects page 
 !-------------------------------*/
 
-section {
-  max-width: 100vw;
+.intro {
+  width: 100vw;
+  height: 93vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  box-shadow:
+  0 0 30px 10px rgb(35, 156, 120);
+  border-radius: 50%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-profile {
+  border-radius: 50%;
+  max-width: 30vw;
+  filter: grayscale(100%);
+}
+
+.img-profile:hover {
+  filter: none;
+}
+
+.intro-p {
+  color: white;
+  max-width: 60vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.contact-bar {
+  height: 7vh;
+  position: sticky;
+  top: 0%;
+  z-index: 5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+a {
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.at {
+  font-size: 35px;
+}
+
+.section {
+  width: 100vw;
   background-color: black;
   margin-bottom: 15%;
 }
@@ -232,8 +292,9 @@ img {
   max-width: 50%;
 }
 
-a .adrian-link {
+.about-link {
   text-decoration: underline;
+  font-size: 20px;
 }
 
 /* !---------------------------
@@ -244,6 +305,25 @@ a .adrian-link {
 @media only screen and (min-width: 800px) {
   .img-div {
     width: 80%;
+  }
+
+  .intro {
+    flex-direction: row;
+  }
+
+  .background {
+    margin-right: 50px;
+    margin-bottom: 0px;
+  }
+
+  .img-profile {
+    max-width: 30vw;
+  }
+  
+  .intro-p {
+    max-width: 50vw;
+    line-height: 2;
+    font-size: 20px;
   }
 
 }
@@ -264,6 +344,10 @@ a .adrian-link {
   .info-para {
     font-size: 1.3vw;
   } 
+
+  .img-profile {
+    max-width: 25vw;
+  }
   
 }
 
